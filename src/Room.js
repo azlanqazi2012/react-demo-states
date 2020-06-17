@@ -18,8 +18,8 @@ function tog(){
     // }
     
 }
-return (
-    <div className={"room "+(isLit?"lit":"dark")}>
+return ( //+(isLit?"lit":"dark")
+    <div className={`room  ${isLit?"lit":"dark"}`}>
 {/* This is Room : Lit={isLit?"Lit":"Dark;" //JSON.stringify(isLit)  JSON.stringify converts value into string */} 
   <button onClick={tog}>Toggle</button>
   <br/>
