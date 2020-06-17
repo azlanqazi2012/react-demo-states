@@ -3,6 +3,7 @@ import React,{useState} from 'react';
 
 function Room() {
 let [isLit,setLit]=useState(true);
+let [age,setAge]=useState(20);
 // const state=useState(true);
 //   console.log("State=",state);
 function tog(){
@@ -23,6 +24,10 @@ return (
   <button onClick={tog}>Toggle</button>
   <br/>
 <b>The room Light is: {isLit?"On:":"Off"}</b>
+<br/>
+<button onClick={() =>setAge(++age)}>age</button> 
+  <br/>
+  <b>The Age is: {age}</b>
     </div>
   );
 }
